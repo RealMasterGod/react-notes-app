@@ -36,6 +36,22 @@ Or you may refer to https://vitejs.dev/guide/   for more details.
 ## Redux Tookit
 Learn more about redux toolkit
 - https://redux-toolkit.js.org/
+- To use redux in your projects just run the following commands:
+  ```bash
+  npm install react-redux @reduxjs/toolkit
+  ```
+
+## Material UI Icons
+Material UI icons are easy to use and provides a ton of choices for each icon. Chances are if you are looking for 
+an icon, they have it.
+
+Refer to the offical site to get started with material ui : https://mui.com/material-ui/getting-started/
+
+## Styled Components
+Styled components make it much easier to write css and the option to pass props from the components makes it
+a powerful tool for conditional css rendering rules. I prefer it over plain css.
+
+Getting started with styled components : https://styled-components.com/docs
 
 # 3. Prerequisites
 ## Install Node Package Manager
