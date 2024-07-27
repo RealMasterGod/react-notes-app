@@ -58,7 +58,7 @@ const SaveButton = styled.button`
 const BottomForm = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   /* gap: 15px; */
   height: calc(100vh - 80px);
   /* padding-top: 20px; */
@@ -89,6 +89,7 @@ const TextArea = styled.textarea`
   color: white;
   padding: 25px 15px;
   font-size: 20px;
+  max-height: calc(100vh - 80px - 100px);
   ${mobile({
     fontSize: '16px',
   })}
