@@ -20,7 +20,7 @@ const Container = styled.div`
   &:nth-child(7n + 6) {
     grid-area: span 1 / span 1;
     & span {
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 2;
     }
   }
   &:nth-child(7n + 3),
@@ -32,10 +32,10 @@ const Container = styled.div`
     & span {
       
       ${tabs({
-        "-webkit-line-clamp": '13',
+        "-webkit-line-clamp": '10',
       })}
       ${mobile({
-        "-webkit-line-clamp": '5',
+        "-webkit-line-clamp": '2',
       })}
     }
   }
@@ -47,10 +47,10 @@ const Container = styled.div`
     & span {
       -webkit-line-clamp: 14;
       ${tabs({
-        "-webkit-line-clamp": '30',
+        "-webkit-line-clamp": '27',
       })}
       ${mobile({
-        "-webkit-line-clamp": '15',
+        "-webkit-line-clamp": '12',
       })}
 
     }
@@ -79,6 +79,7 @@ const DeleteIcon = styled.div`
   color: #383838;
   position: relative;
   font-size: 22px;
+  max-height: 25%;
   z-index: 1;
   ${tabs({
     fontSize: '30px',

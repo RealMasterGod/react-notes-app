@@ -21,9 +21,8 @@ const OuterContainer = styled.div`
   ${tabs({
     width: '100%',
   })}
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between; */
 `;
 
 const Container = styled.div`
@@ -87,6 +86,8 @@ const Notes = ({text}) => {
             <NoteItem note={note} key={note.id}/>
         ))}
       </Container>
+      {text && filteredDataLength === 0 && <span style={{color:'#464646',alignSelf: 'center'}}>No match found :(</span>}
+      {notes.length === 0 && <span style={{color:'#464646',alignSelf: 'center'}}>Click on the + icon below to create a note.</span>}
       <Link className="link" to="/newNote">
       <AddButton>
         <Add fontSize="inherit" />
