@@ -338,7 +338,7 @@ Error generating stack: `+i.message+`
 `,qP=I.form`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   /* gap: 15px; */
   height: calc(100vh - 80px);
   /* padding-top: 20px; */
@@ -361,6 +361,7 @@ Error generating stack: `+i.message+`
   color: white;
   padding: 25px 15px;
   font-size: 20px;
+  max-height: calc(100vh - 80px - 100px);
   ${pe({fontSize:"16px"})}
   ${le({fontSize:"18px"})}
   &:focus {
