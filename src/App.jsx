@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-notes-app/">
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/newNote" element={<NewNote />}/>
